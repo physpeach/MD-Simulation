@@ -1,0 +1,26 @@
+{
+    "name": "develop MD simulation",
+    "build": {
+        "dockerfile": "${localWorkspaceFolder}/Dockerfile",
+        "context": "${localWorkspaceFolder}"
+    },
+    "mounts": [
+        "type=bind,source=${localEnv:HOME}/.bashrc,target=/home/ubuntu/.bashrc",
+        "type=bind,source=${localEnv:HOME}/.ssh,target=/home/ubuntu/.ssh",
+        "type=bind,source=${localEnv:HOME}/.gitconfig,target=/home/ubuntu/.gitconfig",
+        "type=bind,source=${localWorkspaceFolder},target=/workspace,consistency=cached"
+    ],
+    "remoteUser": "ubuntu",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "mhutchie.git-graph",
+                "eamodio.gitlens",
+                "ms-vscode.cpptools",
+                "llvm-vs-code-extensions.vscode-clangd",
+                "ms-vscode.cmake-tools",
+                "ms-python.python"
+            ]
+        }
+    }
+}
