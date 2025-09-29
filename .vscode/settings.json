@@ -1,0 +1,19 @@
+{
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.arguments": [
+        "--clang-tidy",
+        "--pch-storage=memory",
+        "--header-insertion=never"
+    ],
+    "cmake.preferredGenerators": [
+        "Ninja Multi-Config",
+        "Ninja",
+        "Unix Makefiles"
+    ],
+    "files.associations": {
+        "*.cu": "cpp"
+    },
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "${workspaceFolder}/externals/vcpkg/scripts/buildsystems/vcpkg.cmake",
+    }
+}
