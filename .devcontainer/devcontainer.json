@@ -4,6 +4,11 @@
         "dockerfile": "${localWorkspaceFolder}/Dockerfile",
         "context": "${localWorkspaceFolder}"
     },
+    "runArgs":[
+        "--name=dev-MD",
+        "--rm"
+    ],
+    "workspaceFolder": "/workspace",
     "mounts": [
         "type=bind,source=${localEnv:HOME}/.bashrc,target=/home/ubuntu/.bashrc",
         "type=bind,source=${localEnv:HOME}/.ssh,target=/home/ubuntu/.ssh",
@@ -14,12 +19,17 @@
     "customizations": {
         "vscode": {
             "extensions": [
+                "formulahendry.docker-extension-pack",
                 "mhutchie.git-graph",
                 "eamodio.gitlens",
                 "ms-vscode.cpptools",
                 "llvm-vs-code-extensions.vscode-clangd",
                 "ms-vscode.cmake-tools",
-                "ms-python.python"
+                "yzhang.markdown-all-in-one",
+                "mechatroner.rainbow-csv",
+                "oderwat.indent-rainbow",
+                "shardulm94.trailing-spaces",
+                "streetsidesoftware.code-spell-checker"
             ]
         }
     }
