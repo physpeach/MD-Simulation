@@ -151,5 +151,5 @@ endif()
 add_subdirectory(app)
 add_subdirectory(experimentals)
 
-# enable_testing()
-# add_subdirectory(test)
+enable_testing()
+add_subdirectory(test)
