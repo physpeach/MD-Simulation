@@ -4,7 +4,7 @@
         "dockerfile": "${localWorkspaceFolder}/Dockerfile",
         "context": "${localWorkspaceFolder}"
     },
-    "runArgs":[
+    "runArgs": [
         "--name=dev-MD",
         "--rm"
     ],
@@ -23,6 +23,7 @@
                 "mhutchie.git-graph",
                 "eamodio.gitlens",
                 "ms-vscode.cpptools",
+                "vscode.cpptools-extension-pack",
                 "llvm-vs-code-extensions.vscode-clangd",
                 "ms-vscode.cmake-tools",
                 "yzhang.markdown-all-in-one",
