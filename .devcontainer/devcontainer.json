@@ -1,5 +1,5 @@
 {
-    "name": "develop MD simulation",
+    "name": "develop md_fp32",
     "build": {
         "dockerfile": "${localWorkspaceFolder}/Dockerfile",
         "context": "${localWorkspaceFolder}"
