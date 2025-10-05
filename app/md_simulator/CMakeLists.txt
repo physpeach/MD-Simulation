@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20.0 FATAL_ERROR)
 
-project(md_simulator CXX)
+project(md_fp32 CXX)
 
 file(
   GLOB_RECURSE MAIN_SOURCE_FILES
@@ -10,5 +10,6 @@ file(
 add_executable(${PROJECT_NAME} ${MAIN_SOURCE_FILES})
 
 # dependencies
-find_package(fmt 10.0.0 CONFIG REQUIRED)
-target_link_libraries(${PROJECT_NAME} PRIVATE fmt::fmt-header-only)
+target_link_libraries(${PROJECT_NAME} PRIVATE
+  integrator
+)
